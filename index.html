@@ -3,13 +3,32 @@
 <html>
   <head>
     <title>Laura Balestra</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+    <style> 
+      body {
+        text-align: center;
+        font-family:  Kanit, sans-serif;
+        font-size: 32px;
+        color: black;
+      }
+      img {
+        width: 200px;
+        border: 3px solid black;
+      }
+    </style>
   </head>
 
   <body>
     <div>
       <p>
-        <a>mail me!</a>
+        <img src="photo.jpg">
+        <br>
+        <a id="mail">mail me</a>
       </p>
     </div>
+    <script>
+      var name = 'laura.r.balestra';
+      document.getElementById('mail').href = 'mailto:'+name+'@'+'gmail.com';
+    </script>
   </body>
 </html>
